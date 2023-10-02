@@ -6,29 +6,63 @@ p {
   }
 }
 
-h1 {
-  box-sizing: border-box;
-  margin: 0;
-  background-color: navy;
-  color: white;
-  font-size: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 600;
-  padding-top: 5%;
-  padding-left: 3%;
+@import url('http://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap');
+
+
+.head {
+  background-color: blue;
+  width: device-width;
+  border: 2px solid greenyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-img {
-  height: 100%;
-  width: auto;
+.title {
+  padding-left: 1rem;
+  color: aliceblue;
+  font-family: "Oswald";
 }
+
+.nav {
+  padding-top: 2rem
+  padding-right: .5rem;
+  border: 2px solid black;
+  font-family: "Oswald";
+  display:flex;
+}
+
+.nav link {
+  color:aliceblue;
+}
+
+.home-text {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Open Sans";
+}
+
+.donate {
+  background: linear-gradient(rgba (85,85, 240,0.5),
+  rgba (85,85,240,0.50)),
+  ) <img src="momentum-projec/momentum-projects/html-dog-adoption-site-megancain/imagests/html-dog-adoption-site-megancain/images/donate.jpg">
+
+}
+
+
+<img src="images/donate.jpg">
+{
+  width: 100%;
+  height: 100%;
+}
+
 .container{
   position: relative
   text-align: center;
   color: white;
-  
 
 }
+
 
 .centered {
   position: absolute;
@@ -49,4 +83,6 @@ p {
   font-size: 20px;
 }
 
+.footer{
+  display:flex;
 }
