@@ -10,9 +10,8 @@ p {
 
 
 .head {
-  background-color: blue;
+  background-color: #004175;
   width: device-width;
-  border: 2px solid greenyellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,7 +20,11 @@ p {
 .title {
   padding-left: 1rem;
   color: aliceblue;
-  font-family: "Oswald";
+  font-family: "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+}
+
+body {
+  margin: 0;
 }
 
 .nav {
@@ -30,9 +33,10 @@ p {
   border: 2px solid black;
   font-family: "Oswald";
   display:flex;
+  align-items:center
 }
 
-.nav link {
+.nav-link {
   color:aliceblue;
 }
 
@@ -43,46 +47,85 @@ p {
 }
 
 .donate {
-  background: linear-gradient(rgba (85,85, 240,0.5),
+  background: linear-gradient(rgba (85,85,240,0.5)
   rgba (85,85,240,0.50)),
-  ) <img src="momentum-projec/momentum-projects/html-dog-adoption-site-megancain/imagests/html-dog-adoption-site-megancain/images/donate.jpg">
-
+url(images/donate.jpg)
 }
 
 
-<img src="images/donate.jpg">
-{
-  width: 100%;
-  height: 100%;
+.volunteer {
+  background: linear-gradient(rgba (85,85,240,0.5)
+  rgba (85,85,240,0.50)),
+url(images/volunteer.jpg)
 }
 
-.container{
-  position: relative
-  text-align: center;
-  color: white;
+.location{
+  background: linear-gradient(rgba (85,85,240,0.5)
+  rgba (85,85,240,0.50)),
+url(images/location.png )
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ color: aliceblue;
+ width: 33.3%;
+ background-size: cover;
+ background-position: center;
+ font-size: 2rem;
+ font-family: "Open Sans";
+
 
 }
 
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-body {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
+.dog {
+  font-family: 'Courier New', Courier, monospace;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: beige;
+  border-width: 2px;
+  padding: 2px;
+  margin: 2px;
 }
 
-p {
-  padding-left: 15%;
-  padding-right: 15%;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-size: 20px;
+.dog-name {
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
-.footer{
+.dog-traits-list {
   display:flex;
+  flex-wrap: wrap;
+}
+  
+.dog-traits-item {
+  display: inline-block;
+  background-color: aqua;
+  border-width: 5px;
+  margin: 1px
+  border-radius: 15px;
+  flex-wrap: wrap;
+  padding-top: 2rem
+  padding-right: .5rem;
+  border: 2px solid black;
+  font-family: "Oswald";
+  display:flex;
+  align-items:center
+}
+
+footer a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer {
+  flex: 1 100%;
+  flex-direction: flex;
+  height: 13rem;
 }
